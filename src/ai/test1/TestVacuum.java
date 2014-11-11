@@ -17,7 +17,7 @@ public class TestVacuum {
 
 
 
-	//	@Test
+	@Test
 	public void testReflexAgentOnSimpleEnvironment(){ 
 		GridEnvironment env = (GridEnvironment) getEnv1();
 		env.notifyViews("Execution of reflex agent on simple environment ");
@@ -25,21 +25,21 @@ public class TestVacuum {
 		env.stepUntilDone();
 	}
 
-	//@Test
+	@Test
 	public void testReflexAgentOnComplexEnvironment(){ 
 		GridEnvironment env = (GridEnvironment) getEnv2();
 		env.notifyViews("Execution of reflex agent on complex environment "); 
 		env.addAgent(new SimpleReflexVacuumAgent(), new XYLocation(1,0));
 		env.stepUntilDone();
 	}
-	//@Test
+	@Test
 	public void testModelBasedAgentOnSimpleEnvironment(){ 
 		GridEnvironment env = (GridEnvironment) getEnv1();
 		env.notifyViews("Execution of model based agent on simple environment ");  
 		env.addAgent(new ModelBasedVacuumAgent(), new XYLocation(1,0));
 		env.stepByStepUntilDone();
 	}
-	//@Test
+	@Test
 	public void testModelBasedAgentOnComplexEnvironment(){ 
 		GridEnvironment env = (GridEnvironment) getEnv1();
 		env.notifyViews("Execution of model based agent on complex environment ");  

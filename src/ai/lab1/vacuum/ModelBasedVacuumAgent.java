@@ -62,7 +62,9 @@ public class ModelBasedVacuumAgent extends GridAgent {
 
 	@Override
 	public void updateModel(Action action, Percept percept) {
-		// A completer
+		// A completer <----- done
+		
+		model.update(action, percept);
 	}
 
 }

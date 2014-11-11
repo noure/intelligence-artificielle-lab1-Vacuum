@@ -29,7 +29,7 @@ public class ModelBasedVacuumAgent extends GridAgent {
 
 	@Override
 	public Action chooseAction(Percept percept) { 
-	    //	A complete. vous pouvez utilisé cet algo:
+	    //	A complete. vous pouvez utilisï¿½ cet algo:
 	   /**
 	    * if location-state is Dirty
 	    * 		return STUCK
@@ -40,6 +40,8 @@ public class ModelBasedVacuumAgent extends GridAgent {
 	    * 	return action
 	    * 	
 	    */
+		
+		
 		 
 	}
 

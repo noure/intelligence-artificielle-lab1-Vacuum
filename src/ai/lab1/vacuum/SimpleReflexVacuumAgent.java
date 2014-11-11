@@ -6,7 +6,6 @@ import ai.lab1.core.Action;
 import ai.lab1.core.Percept;
 import ai.lab1.core.grid.GridAgent;
 import ai.lab1.core.grid.GridEnvironment;
-import ai.lab1.vacuum.VacuumEnvironment.LocationState;
 
 public class SimpleReflexVacuumAgent extends GridAgent {
 
@@ -26,7 +25,8 @@ public class SimpleReflexVacuumAgent extends GridAgent {
 				VacuumEnvironment.LocationState.Dirty)) {
 			return VacuumEnvironment.STUCK;
 		} else {
-			/** 
+			/** trois action sont possibile 
+			 * 
 			 * 
 			 */
 			int i = rand.nextInt(3);
